@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+.game-container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.label {
+    font-size: 14px;
+    text-transform: uppercase;
+    opacity: 0.8;
+    letter-spacing: 1px;
+}
+
+.score-value {
+    font-size: 48px;
+    font-weight: bold;
+    color: #4ecca3;
+    text-shadow: 0 0 10px rgba(78, 204, 163, 0.5);
+}
+
+.divider {
+    font-size: 36px;
+    opacity: 0.5;
+}
+
+#pongCanvas {
+    display: block;
+    background: #000;
+    border: 3px solid #4ecca3;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(78, 204, 163, 0.3);
+    margin: 20px 0;
+    cursor: none;
+}
+
+.instructions {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.instructions p {
+    margin: 5px 0;
+}
+
+.instructions strong {
+    color: #4ecca3;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .game-container {
+        padding: 20px;
+    }
+
+    .scoreboard {
+        gap: 30px;
+    }
+
+    .score-value {
+        font-size: 36px;
+    }
+
+    #pongCanvas {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .instructions {
+        font-size: 12px;
+    }
+}
